@@ -3,16 +3,16 @@ import React from 'react'
 function UserInfo(props){
     return(
         <div className="User-Info">
-            <div className="name">
-                {props.users.name}
+            <div className="user-name">
+                {props.data.name}
             </div>
             <div className="user-info">
-                {props.users.city}, {props.users.country}
-                {props.users.title}
-                {props.users.employer}
+                {props.data.city}, {props.data.country}
+                {props.data.title}
+                {props.data.employer}
             </div>
             <div className="favorite-movies">
-                {props.users.favoriteMovies}
+                {props.data.favoriteMovies}
             </div>
         </div>
     )
