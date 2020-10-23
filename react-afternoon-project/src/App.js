@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
+import './reset.css';
 import './App.css';
 import {Link} from 'react-router-dom'
 import router from './router'
