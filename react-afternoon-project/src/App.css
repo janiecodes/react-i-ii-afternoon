@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #222222;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +37,112 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.user-directory {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+  align-items: center;
+  background-color: #34a5db;
+  height: 10vh;
+  width: 100%;
+}
+
+.user-info {
+  margin: 0 auto;
+  background-color: #ebebeb;
+  width: 75%;
+
+}
+
+.user-id {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex; 
+  justify-content: flex-end;
+  
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  margin-left: 10%;
+}
+
+.info {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.from {
+  display: flex;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.job-title {
+  display: flex;
+  margin-left: 10%;
+  margin-top: 0%;
+}
+
+.employer {
+  display: flex;
+  margin-left: 10%;
+  margin-top: 0%;
+}
+
+.favorite-movies {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.movie-list {
+  display: flex;
+  margin-left: 10%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+.first-movie {
+  display: flex;
+  margin-left: 15%;
+  margin-top: 0%;
+}
+
+.second-movie {
+  display: flex;
+  margin-left: 15%;
+  margin-top: 0%;
+}
+
+.third-movie {
+  display: flex;
+  margin-top: 0%;
+  margin-left: 15%;
+  padding-bottom: 8%;
+}
+
+.buttons {
+  display: flex;
+  padding: 10px;
+  
+}
+
+.previous {
+  margin-left: 15%;
+}
+
+.next {
+  margin-left: 20%;
+}
+
+.black-diamond-buttons {
+  margin-left: 18%;
+  
 }

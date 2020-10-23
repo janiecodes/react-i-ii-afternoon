@@ -1,18 +1,25 @@
 import React from 'react'
 
-function UserInfo(props){
+function UserInfo({user}){
+
     return(
-        <div className="User-Info">
-            <div className="user-name">
-                {props.data.name}
+        <div className="user-info">
+            <div className="user-id">
+                {user.id}/25
             </div>
-            <div className="user-info">
-                {props.data.city}, {props.data.country}
-                {props.data.title}
-                {props.data.employer}
+            <div className="user-name">
+                {user.name.first} {user.name.last}
+            </div>
+            <div className="info">
+                <p className="from"><strong>From:</strong> {user.city}, {user.country}</p>
+                <p className="job-title"><strong>Job Title:</strong> {user.title}</p>
+                <p className="employer"><strong>Employer:</strong>{user.employer}</p>
             </div>
             <div className="favorite-movies">
-                {props.data.favoriteMovies}
+                <h4 className="movie-list">Favorite Movies:</h4>
+                    <p className="first-movie">1. {user.favoriteMovies[0]}</p>
+                    <p className="second-movie">2. {user.favoriteMovies[1]}</p>
+                    <p className="third-movie">3. {user.favoriteMovies[2]}</p>
             </div>
         </div>
     )
